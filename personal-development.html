@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="profileIcon.png" alt="Profile Picture" class="profile-pic" />
+      <div class="profile-info">
+        <h3>Peter Parker</h3>
+        <p>Associate Professor</p>
+      </div>
+    </div>
+
+    <nav class="menu">
+      <a class="menu-item active" href="index.html">Home</a>
+      <a class="menu-item" href="Meetings.html">Meetings</a>
+      <a class="menu-item" href="Attendance.html">Attendance</a>
+    </nav>
+
+    <a class="logout" href="#">⏻ Logout</a>
+    
+  </aside>
+
+
+    <main class="main-content">
+      <div class="student-header">
+        <div class="student-card">
+          <img src="student-photo.png" class="student-photo" alt="Student Photo"/>
+          <div class="student-info">
+            <h2>Ansell Abraham</h2>
+            <div class="details">
+            <p><strong>2362034</strong></p>
+            <p><strong>5 BTCSAIML B</strong></p>
+            </div>
+            <div class="id_info">
+            <p id="year">2023–2027</p>
+            <p class="dept">Department of AIML & DS</p>
+            </div>
+          </div>
+          
+          <div class="attendance">
+            <img src="pieChart.png" alt="Pie Chart"/>
+            <p>62.5%<br>Attendance %</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <a href="academic.html" class="tab">Academic Progress</a>
+        <a href="personal-development.html" class="tab active-tab">Personal Development</a>
+        <a href="feedback.html" class="tab">Feedback</a>
+      </div>
+
+      <div class="section-title">
+        <i>Ansell's Self-improvement</i>
+        <span class="edit-icon">✎</span>
+      </div>
+      <hr>
+      <br>
+
+      <div class="grid">
+        <div class="box">
+          <h4>Extra-curriculars/ Co-curriculars</h4>
+          <ul>
+            <li>Volunteer - SWO</li>
+            <li>Sports - Football</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h4>Projects/Research</h4>
+          <ul>
+            <li>Machine Learning<br><span class="subtext">- under Prof. Cynthia</span></li>
+          </ul>
+        </div>
+
+        <div class="box wide">
+          <h4>Action Plans</h4>
+          <ul class="action-plans">
+            <li>
+              Enroll in Data Science Course<br>
+              <span class="due">Due: July 15, 2025</span>
+              <input type="checkbox"/>
+            </li>
+            <li>
+              Attend Toastmasters Meetings<br>
+              <span class="due">Due: August 1, 2025</span>
+              <input type="checkbox"/>
+            </li>
+            <li>
+              Attend Hackathon Sessions<br>
+              <span class="due">Due: August 30, 2025</span>
+              <input type="checkbox"/>
+            </li>
+          </ul>
+          <hr>
+          <p class="goal">Goal:</p>
+        </div>
+      </div>
+
+      <div class="remarks">
+        <label for="remarks">Remarks</label>
+        <textarea id="remarks"></textarea>
+        <div class="note-icon">🗒️</div>
+      </div>
+      
+    </main>
+  </div>
+</body>
+</html>

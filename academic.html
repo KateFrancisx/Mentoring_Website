@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Academic Progress</title>
+  <link rel="stylesheet" href="academicstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+  <div class="profile">
+    <img src="profileIcon.png" alt="Profile Picture" class="profile-pic" />
+    <div class="profile-info">
+      <h3>Peter Parker</h3>
+      <p>Associate Professor</p>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <a class="menu-item active" href="index.html">Home</a>
+    <a class="menu-item" href="Meetings.html">Meetings</a>
+    <a class="menu-item" href="Attendance.html">Attendance</a>
+  </nav>
+
+  <a class="logout" href="#">⏻ Logout</a>
+   
+ 
+
+</aside>
+
+
+    <main class="main-content">
+      <div class="student-card">
+        <img src="student-photo.png" class="student-photo" alt="Student Photo"/>
+        <div class="student-info">
+          <h2>Ansell Abraham</h2>
+          <div class="details">
+            <p><strong>2362034</strong></p>
+            <p><strong>5 BTCSAIML B</strong></p>
+          </div>
+          <div class="id_info">
+            <p id="year">2023–2027</p>
+            <p class="dept">Department of AIML & DS</p>
+          </div>
+        </div>
+        <div class="attendance">
+          <img src="pieChart.png" alt="Pie Chart"/>
+          <p>62.5%<br>Attendance %</p>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <a href="academic.html" class="tab active-tab">Academic Progress</a>
+        <a href="personal-development.html" class="tab">Personal Development</a>
+        <a href="feedback.html" class="tab">Feedback</a>
+      </div>
+
+      <p class="breadcrumb">Ansell’s Progress &gt; Semester 5 &gt; CIA Mid Sem Result</p>
+
+      <table class="progress-table">
+        <thead>
+          <tr>
+            <th>Sl No.</th>
+            <th>Subject Name</th>
+            <th>202511-CIA1-UG</th>
+            <th>202511-CIA2-UG</th>
+            <th>202511-CIA3-UG</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>DISCRETE MATHEMATICS</td><td>16/20</td><td>23/50</td><td>18/20</td></tr>
+          <tr class="highlight-row"><td>2</td><td>DATA STRUCTURES</td><td>17/20</td><td>24/50</td><td>18/20</td></tr>
+          <tr><td>3</td><td>DIGITAL SYSTEMS</td><td>12/20</td><td>22/50</td><td>16/20</td></tr>
+          <tr class="highlight-row"><td>4</td><td>ARTIFICIAL INTELLIGENCE</td><td>13/20</td><td>25/50</td><td>17/20</td></tr>
+          <tr><td>5</td><td>MACHINE LEARNING</td><td>11/20</td><td>21/50</td><td>18/20</td></tr>
+          <tr class="highlight-row"><td>6</td><td>CLOUD COMPUTING</td><td>12/20</td><td>29/50</td><td>15/20</td></tr>
+          <tr><td>7</td><td>OPERATING SYSTEMS</td><td>14/20</td><td>30/50</td><td>13/20</td></tr>
+        </tbody>
+      </table>
+
+      <div class="nav-buttons">
+        <span>&lt;<strong> PREVIOUS SEMESTER</strong></span>
+        <span>NEXT SEMESTER&gt;</span>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

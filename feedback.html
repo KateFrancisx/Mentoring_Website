@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Feedback</title>
+  <link rel="stylesheet" href="feedbackstyle.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+  <div class="profile">
+    <img src="profileIcon.png" alt="Profile Picture" class="profile-pic" />
+    <div class="profile-info">
+      <h3>Peter Parker</h3>
+      <p>Associate Professor</p>
+    </div>
+  </div>
+
+  <nav class="menu">
+    <a class="menu-item active" href="index.html">Home</a>
+    <a class="menu-item" href="Meetings.html">Meetings</a>
+    <a class="menu-item" href="Attendance.html">Attendance</a>
+  </nav>
+
+  <a class="logout" href="#"> Logout</a>
+</aside>
+
+   
+    <main class="main-content">
+      <div class="student-card">
+        <img src="student-photo.png" class="student-photo" alt="Student Photo"/>
+        <div class="student-info">
+          <h2>Ansell Abraham</h2>
+          <div class="details">
+            <p><strong>2362034</strong></p>
+            <p><strong>5 BTCSAIML B</strong></p>
+          </div>
+          <div class="id_info">
+            <p id="year">2023–2027</p>
+            <p class="dept">Department of AIML & DS</p>
+          </div>
+        </div>
+        <div class="attendance">
+          <img src="pieChart.png" alt="Pie Chart"/>
+          <p>62.5%<br>Attendance %</p>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <a href="academic.html" class="tab">Academic Progress</a>
+        <a href="personal-development.html" class="tab">Personal Development</a>
+        <a href="feedback.html" class="tab active-tab">Feedback</a>
+      </div>
+
+      <div class="feedback-form">
+        <label for="feedback">Enter your Feedback</label>
+        <textarea id="feedback" placeholder="Type Here..."></textarea>
+
+        <label for="date">Enter Date:</label>
+        <input type="text" id="date" placeholder="DD-MM-YYYY" />
+
+        <div class="form-buttons">
+          <button class="submit-btn">SUBMIT</button>
+          <button class="cancel-btn">CANCEL</button>
+        </div>
+      </div>
+
+      <div class="previous-feedback">
+        <h3>Previous Feedback:</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Feedback</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>05-07-2025</td>
+              <td>Ansell demonstrated excellent problem-solving skills during our last session.</td>
+            </tr>
+            <tr>
+              <td>20-06-2025</td>
+              <td>Ansell is making progress, but needs to work on time management.</td>
+            </tr>
+            <tr>
+              <td>13-06-2025</td>
+              <td>Exceptional performance, Ansell exceeded expectations.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

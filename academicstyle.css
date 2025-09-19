@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #f4f9fb;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #cbd8e1;
+  border-radius: 50%;
+}
+
+.profile-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.profile-info p {
+  font-size: 14px;
+  color: #666;
+}
+
+.menu {
+  margin-top: 30px;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  background-color: transparent;
+  border-left: 4px solid transparent;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.menu-item:hover {
+  background-color: #e2f0f7;
+  border-left: 4px solid #007bff;
+  color: #007bff;
+}
+
+.menu-item.active {
+  background-color: #e2f0f7;
+  border-left: 4px solid #007bff;
+  color: #007bff;
+}
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 15px;
+}
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: auto;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.logout:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.logout-icon-img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1); /* makes icon white */
+}
+
+
+
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: auto;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.logout:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.logout-icon {
+  font-size: 16px;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 30px 40px;
+  margin-left: 240px;
+}
+
+.student-card {
+  display: flex;
+  align-items: center;
+  background-color: #f0f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.student-photo {
+  width: 177px;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.student-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.student-info h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.dept {
+  color: #007bff;
+  font-weight: 500;
+}
+
+#year {
+  color: #0A78ED;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details p {
+  color: #385E72;
+  font-size: 20px;
+}
+
+.attendance {
+  text-align: center;
+  font-size: 13px;
+  margin-left: 50px;
+}
+
+.attendance img {
+  width: 60px;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 20px;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px;
+  background-color: #3a6da0;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.active-tab {
+  background-color: #fdfdfd;
+  color: #3a6da0;
+  border: 2px solid #3a6da0;
+  border-bottom: none;
+}
+.active-tab a{
+  color: #3a6da0;
+  text-decoration: none;
+}
+
+.breadcrumb {
+  font-style: italic;
+  margin: 20px 0;
+  color: #444;
+}
+
+.progress-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.progress-table th,
+.progress-table td {
+  border: 1px solid #999;
+  padding: 10px;
+  text-align: center;
+}
+
+.progress-table th {
+  background-color: #dbeefb;
+  color: #000;
+}
+
+.highlight-row td {
+  background-color: #e3f0f9;
+  
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #333;
+}
